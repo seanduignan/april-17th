@@ -1,0 +1,25 @@
+</div>
+<a href="/" >Home</a> |
+<a href="/get-data" >Cattle</a> |
+<a href="/get-feeddata" >Feed</a> |
+<a href="/get-vetdata" >Vet Bills</a> |
+<a href="/get-supplydata" >Supplies</a>|
+<a href="/removeupdate" >Remove/Update</a>
+</div>
+<br>
+</section2>
+<section2 class="get">
+    <h3>Animal Feeds Purchased</h3>
+    <div>
+        {{# each amounts }}
+            <article class="amount">
+                <b>Quantity:</b> {{ this.qty }}
+                <b>Price:</b> {{ this.price }}
+                <b>Supplier:</b> {{ this.supplier }}
+                <b>Type:</b> {{ this.type }}
+                <b>Date:</b> {{ this.date1 }}
+                <b>ID:</b> {{ this._id }}
+            </article>
+        {{/each}}
+    </div>
+</section2>

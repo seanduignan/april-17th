@@ -1,0 +1,147 @@
+<div class="header">
+  <a href="/" class="logo">Farm Management System</a>
+  <div class="header-right">
+    <a class="active" href="/get-data">Cattle</a>
+    <a href="/get-feeddata">Feed</a>
+    <a href="/get-vetdata">Vet Bills</a>
+    <a href="/get-supplydata">Supplies</a>
+    <a href="/removeupdate">Remove/Update</a>
+    <a href="/get-profitdata">Profits</a>
+
+  </div>
+</div>
+
+
+
+<br>
+<br>
+<a href="/get-data" >
+<img style="width:180px;height:130px;margin-left:30px;box-shadow: 10px 10px 5px grey;" src="/images/cow.jpg"></a>
+<a href="/get-vetdata" >
+<img style="width:180px;height:130px;margin-left:110px;box-shadow: 10px 10px 5px grey;" src="/images/vet.png"></a>
+<a href="/get-feeddata" >
+<img style="width:180px;height:130px;margin-left:100px;box-shadow: 10px 10px 5px grey;" src="/images/hay.png"></a>
+<a href="/get-supplydata" >
+<img style="width:180px;height:130px;margin-left:120px;box-shadow: 10px 10px 5px grey;" src="/images/tractor.png"></a>
+<br>
+
+<section class="insert">
+    <h3>Animals</h3>
+    <form action="/insert" autocomplete="off" method="post">
+        <div class="input">
+            <label for="tag">Tag</label>
+            <input type="text" id="tag" name="tag">
+        </div>
+        <div class="input">
+            <label for="gender">Gender</label>
+            <input type="text" id="gender" name="gender">
+        </div>
+        <div class="input">
+            <label for="sire">Sire</label>
+            <input type="text" id="sire" name="sire">
+        </div>
+        <div class="input">
+            <label for="breed">Breed</label>
+            <input type="text" id="breed" name="breed">
+        </div>
+        <div class="input">
+            <label for="dob">D.O.B.</label>
+            <input type="date" id="dob" name="dob">
+        </div>
+        <div class="input">
+            <label for="due">Calving Date</label>
+            <input type="date" id="due" name="due">
+        </div>
+        <div class="input">
+            <label for="pur">Purchase Price</label>
+            <input type="text" id="pur" name="pur">
+        </div>
+        <div class="input">
+            <label for="dos">D.O.S.</label>
+            <input type="date" id="dos" name="dos">
+        </div>
+        <div class="input">
+            <label for="sal">Sale Price</label>
+            <input type="text" id="sal" name="sal">
+        </div>
+        <button type="submit">INSERT</button>
+    </form>
+
+
+  </section>
+      <section class="insert">
+          <h3>Vet Bills</h3>
+          <form action="/insertvet" autocomplete="off" method="post">
+              <div class="input">
+                  <label for="reason">Reason</label>
+                  <input type="text" id="reason" name="reason">
+              </div>
+              <div class="input">
+                  <label for="cost">Cost</label>
+                  <input type="text" id="cost" name="cost">
+              </div>
+              <div class="input">
+                  <label for="vetname">Vet Name</label>
+                  <input type="text" id="vetname" name="vetname">
+              </div>
+              <div class="input">
+                 <label for="date">Date</label>
+                  <input type="date" id="date" name="date">
+              </div>
+              <div class="input">
+                  <label for="tag1">Tag</label>
+                  <input type="text" id="tag1" name="tag1">
+              </div>
+              <button type="submit">INSERT</button>
+          </form>
+  </section>
+
+
+</section>
+    <section class="insert">
+        <h3>Animal Feed</h3>
+        <form action="/insertfeed" autocomplete="off" method="post">
+            <div class="input">
+                <label for="qty">Quantity</label>
+                <input type="text" id="qty" name="qty">
+            </div>
+            <div class="input">
+                <label for="price">Price</label>
+                <input type="text" id="price" name="price">
+            </div>
+            <div class="input">
+                <label for="supplier">Supplier</label>
+                <input type="text" id="supplier" name="supplier">
+            </div>
+            <div class="input">
+                <label for="type">Type</label>
+                <input type="text" id="type" name="type">
+            </div>
+            <div class="input">
+                <label for="date1">Date</label>
+                <input type="date" id="date1" name="date1">
+            </div>
+            <button type="submit">INSERT</button>
+        </form>
+</section>
+
+
+</section>
+    <section class="insert">
+        <h3>Machinery/Supplies</h3>
+        <form action="/insertsupply" autocomplete="off" method="post">
+            <div class="input">
+                <label for="sup">Supplies</label>
+                <input type="text" id="sup" name="sup">
+            </div>
+            <div class="input">
+                <label for="price2">Price</label>
+                <input type="text" id="price2" name="price2">
+            </div>
+            <div class="input">
+                <label for="date2">Date</label>
+                <input type="date" id="date2" name="date2">
+            </div>
+            <button type="submit">INSERT</button>
+        </form>
+</section>

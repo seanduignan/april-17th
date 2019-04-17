@@ -1,0 +1,56 @@
+<div class="header">
+  <a href="/" class="logo">Farm Management System</a>
+  <div class="header-right">
+    <a class="active" href="/get-data">Cattle</a>
+    <a href="/get-feeddata">Feed</a>
+    <a href="/get-vetdata">Vet Bills</a>
+    <a href="/get-supplydata">Supplies</a>
+    <a href="/removeupdate">Remove/Update</a>
+    <a href="/get-profitdata">Profits</a>
+
+  </div>
+</div>
+
+<select name="forma" onchange="location = this.value;">
+ <option value="/get-profitdata">all</option>
+ <option value="/get-supplydata">2019</option>
+ <option value="div#about">2018</option>
+ <option value="Sitemap.php">2017</option>
+
+</select>
+
+</section>
+<section class="get">
+    <h3> 2019 profits</h3>
+    <div>
+
+            <article class="profit">
+                <div>vet total costs: {{ totalProfit }}</div>
+                <div>feed total costs: {{ totalProfit2 }}</div>
+                <div>supply total costs: {{ totalProfit3 }}</div>
+                <div>Cattle bought: {{ totalProfit4 }}</div>
+                <div>Cattle sold: {{ totalProfit5 }}</div>
+                <div>Total spent: {{ totalSpentAll }}</div>
+                <div>Yearly Profit: {{ totalNum }}</div>
+
+            </article>
+    </div>
+</section>
+
+</section>
+<section class="get">
+    <h3>2018 profits</h3>
+    <div>
+
+            <article class="profit">
+                <div>vet total costs: {{ totalProfit9 }}</div>
+                <div>feed total costs: {{ totalProfit29 }}</div>
+                <div>supply total costs: {{ totalProfit39 }}</div>
+                <div>Cattle bought: {{ totalProfit49 }}</div>
+                <div>Cattle sold: {{ totalProfit59 }}</div>
+                <div>Total spent: {{ totalSpentAll9 }}</div>
+                <div>Yearly Profit: {{ totalNum9 }}</div>
+
+            </article>
+    </div>
+</section>
